@@ -12,16 +12,15 @@ submitButton.addEventListener('click', function(e) {
     if (validateEmail(emailField.value)) {
         removeClassFromElement(' has-error', parentNode);
         removeClassFromElement(' has-feedback', parentNode);
+        addClassToElement(iconElement, ' sr-only');
         emailField.style.backgroundColor = 'initial';
         document.getElementById('emailInputStatus').className = 'sr-only';
-        iconElement.className = iconElement.className.replace(' sr-only', '');
-        iconElement.className += ' sr-only';
     } else {
         addClassToElement(' has-error', parentNode);
         addClassToElement(' has-feedback', parentNode);
+        removeClassFromElement(iconElement, ' sr-only');
         emailField.style.backgroundColor = '#fde7e9';
         document.getElementById('emailInputStatus').className = 'input-error';
-        iconElement.className = iconElement.className.replace(' sr-only', '');
     }
 })
 
