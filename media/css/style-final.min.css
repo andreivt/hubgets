@@ -22090,13 +22090,55 @@ body.hg-get-started .step img {
 }
 
 .section-organization h1 {
-  letter-spacing: 0.1em;
-  margin-bottom: 5px;
+    letter-spacing: 0.1em;
+    margin-bottom: 5px;
 }
 
 .section-organization {
     padding: 70px 0;
 }
+
+.form-horizontal .has-feedback .form-control-feedback {
+    right: 5px;
+}
+
+.has-feedback label~.form-control-feedback {
+    top: 47px;
+}
+
+.input-error {
+    background-color: #ef7175;
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+    margin-top: 10px;
+}
+
+.input-error:after {
+    bottom: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.input-error:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #ef7175;
+    border-width: 8px;
+    margin-left: -23px;
+}
+/*.input-error:before {
+    border-color: rgba(113, 158, 206, 0);
+    border-bottom-color: #719ECE;
+    border-width: 20px;
+    left: 70%;
+    margin-left: -20px;
+}*/
 
 @media screen and (min-width: 768px) {
     .items-wrapper {
@@ -22138,11 +22180,12 @@ body.hg-get-started .step img {
 
 @media screen and (max-width: 500px) {
     .category-footer {
-      width: 100%;
+        width: 100%;
     }
     .section-organization p {
-      font-size: 13px;
+        font-size: 13px;
     }
 }
+
 
 /* End SignUp Page Contribution */
