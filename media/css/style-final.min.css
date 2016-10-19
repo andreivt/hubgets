@@ -9115,7 +9115,8 @@ a:hover {
 }
 .footer .category-footer ul li a:hover {
     color: #FFF;
-    text-decoration: none
+    text-decoration: none;
+    font-weight: 300;
 }
 .footer ul.inline {
     display: inline-block;
@@ -9155,8 +9156,7 @@ a:hover {
 }
 .footer .logo-hubgets {
     display: block;
-    width: 50px;
-    height: 35px;
+    width: 100px;
     margin-top: 13px;
     opacity: .6;
     -webkit-transition: opacity .2s;
@@ -20387,20 +20387,31 @@ only screen and (min-resolution: 1.5dppx) and (max-width: 400px) {
 .section-organization h1 {
     font-size: 36px;
     line-height: 1.2em;
-    font-weight: 400;
+    font-weight: 800;
     margin: 0;
     color: white;
 }
-.section-organization p.lead {
-    font-size: 26px;
-    line-height: 1.1em;
-    font-weight: 400;
-    margin-top: 35px
-}
 .section-organization p {
-    font-size: 20px;
+    font-size: 15px;
     line-height: 1.5em;
     font-weight: 300;
     margin-bottom: 15px;
-    color: #2e4655
+    color: #fdfdfd;
+    margin: 0;
+}
+
+.form-wrapper {
+    width: 80%;
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.29);
+    border-top: 0px;
+    padding: 60px;
+}
+
+.fname {
+    padding-left: 0px;
+}
+
+.lname {
+    padding-right: 0px;
 }
