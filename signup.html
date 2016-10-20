@@ -53,11 +53,15 @@
                 <div class="form-group">
                   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 fname">
                     <label for="fname">First name</label>
-                    <input type="text" class="form-control" id="fname">
+                    <input type="text" class="form-control" id="fname" aria-describedby="fnameInputStatus">
+                    <span class="glyphicon glyphicon-exclamation-sign form-control-feedback sr-only" aria-hidden="true"></span>
+                    <span id="fnameInputStatus" class="sr-only">Empty field</span>
                   </div>
                   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 lname">
                     <label for="lname">Last name</label>
-                    <input type="text" class="form-control" id="lname">
+                    <input type="text" class="form-control" id="lname" aria-describedby="lnameInputStatus">
+                    <span class="glyphicon glyphicon-exclamation-sign form-control-feedback sr-only" aria-hidden="true"></span>
+                    <span id="lnameInputStatus" class="sr-only">Empty field</span>
                   </div>
                 </div>
                 <!-- <div class="form-group">
@@ -65,7 +69,9 @@
                 </div> -->
                 <div class="form-group">
                   <label for="company">Company</label>
-                  <input type="text" class="form-control" id="company">
+                  <input type="text" class="form-control" id="company" aria-describedby="companyInputStatus">
+                  <span class="glyphicon glyphicon-exclamation-sign form-control-feedback sr-only" aria-hidden="true"></span>
+                  <span id="companyInputStatus" class="sr-only">Empty field</span>
                 </div>
                 <div class="form-group">
                   <label for="email">E-mail address</label>

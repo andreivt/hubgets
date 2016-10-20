@@ -22014,6 +22014,7 @@ body.hg-get-started .step img {
 
 .fname {
     padding-left: 0px;
+    padding-right: 0px;
 }
 
 .lname {
@@ -22139,6 +22140,12 @@ body.hg-get-started .step img {
     left: 70%;
     margin-left: -20px;
 }*/
+
+@media screen and (max-width: 1200px) {
+  .input-error {
+    display: none;
+  }
+}
 
 @media screen and (min-width: 768px) {
     .items-wrapper {
