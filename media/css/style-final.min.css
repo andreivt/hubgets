@@ -22133,13 +22133,6 @@ body.hg-get-started .step img {
     border-width: 8px;
     margin-left: -23px;
 }
-/*.input-error:before {
-    border-color: rgba(113, 158, 206, 0);
-    border-bottom-color: #719ECE;
-    border-width: 20px;
-    left: 70%;
-    margin-left: -20px;
-}*/
 
 @media screen and (max-width: 1200px) {
   .input-error {
@@ -22193,6 +22186,4 @@ body.hg-get-started .step img {
         font-size: 13px;
     }
 }
-
-
 /* End SignUp Page Contribution */
